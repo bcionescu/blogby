@@ -1,0 +1,247 @@
+/* Regular font */
+@font-face {
+	/* font-family: 'JetBrainsMono'; */
+	/* src: url('../fonts/JetBrainsMono-Regular.woff2') format('woff2'); */
+	font-family: 'iAWriterMono';
+	src: url('../fonts/iAWriterMonoS-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Bold font */
+@font-face {
+	/* font-family: 'JetBrainsMono'; */
+	/* src: url('../fonts/JetBrainsMono-Bold.woff2') format('woff2'); */
+	font-family: 'iAWriterMono';
+	src: url('../fonts/iAWriterMonoS-Bold.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* Italic font */
+@font-face {
+	/* font-family: 'JetBrainsMono'; */
+	/* src: url('../fonts/JetBrainsMono-Italic.woff2') format('woff2'); */
+	font-family: 'iAWriterMono';
+	src: url('../fonts/iAWriterMonoS-Italic.woff2') format('woff2');
+	font-weight: normal;
+	font-style: italic;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	/* background-color: #181725; */
+	background-color: #1B1B1B;
+	color: white;
+	font-family: 'iAWriterMono', monospace;
+	font-size: 18px;
+	/* This affects normal text like <p> */
+}
+
+.dateread {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+}
+
+p {
+	text-align: justify;
+}
+
+h1 {
+	font-size: 69px;
+	/* color: #FFBE69; */
+	/* Larger heading size */
+	/* margin-bottom: 1rem; */
+	/* Optional: space below heading */
+}
+
+h2 {
+	font-size: 36px;
+	color: #FFBE69;
+}
+
+h4 {
+	/* color: #FFBE69 */
+}
+
+.post-preview {
+	/* border: 2px solid #1f1f24; */
+	border: 2px solid grey;
+	/* color and thickness of the border */
+	border-radius: 12px;
+	/* controls roundness of the corners */
+	padding: 35px;
+	/* space inside the border */
+	margin: 16px 0;
+	/* optional: space outside the border */
+	/* background-color: #fff; */
+	/* optional: background color */
+}
+
+.post-preview a {
+	color: white;
+	text-decoration: none;
+}
+
+.post-preview a:hover {
+	color: #FFBE69
+}
+
+.container {
+	max-width: 50%;
+	margin: 0 auto;
+	padding: 2rem 1rem;
+}
+
+a.body-link {
+	color: #FFBE69;
+	text-decoration: none;
+}
+
+.top-left-link {
+	position: absolute;
+	top: 1rem;
+	left: 1.5rem;
+	/* color: #DEDAF2; */
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	transition: color 0.3s ease;
+}
+
+.top-center-link {
+	position: absolute;
+	/* or fixed, depending on context */
+	top: 1rem;
+	left: 50%;
+	transform: translateX(-50%);
+	/* color: #DEDAF2; */
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	transition: color 0.3s ease;
+}
+
+.top-center-link:hover {
+	color: #FFBE69;
+}
+
+.top-left-link:hover {
+	color: #FFBE69;
+}
+
+.top-left-link:nth-child(1) {
+	left: 1.5rem;
+}
+
+.top-left-link:nth-child(2) {
+	left: 5rem;
+}
+
+a.read-more-link {
+	color: #FFBE69;
+}
+
+footer {
+	text-align: center;
+	/* background-color: #333; */
+	color: white;
+	padding: 1rem;
+	margin-top: 2rem;
+}
+
+footer a {
+	color: #FFBE69;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+footer p {
+	display: inline;
+	margin: 0;
+}
+
+/* Media query for tablets */
+@media screen and (max-width: 1024px) {
+
+	.header,
+	.footer {
+		font-size: 14px;
+		padding: 10px;
+	}
+
+	.container {
+		max-width: 75%;
+		margin: 0 auto;
+		padding: 2rem 1rem;
+	}
+
+	.top-center-link {
+		position: absolute;
+		left: auto;
+		/* Clear the previous centering */
+		right: 1.5rem;
+		/* Align close to the right edge */
+		transform: none;
+	}
+
+}
+
+/* Media query for smaller tablets */
+@media screen and (max-width: 550px) {
+
+	h1 {
+		font-size: 45px;
+		/* color: #FFBE69; */
+		/* Larger heading size */
+		/* margin-bottom: 1rem; */
+		/* Optional: space below heading */
+	}
+
+}
+
+/* Media query for mobile phones */
+@media screen and (max-width: 480px) {
+
+	.header,
+	.footer {
+		font-size: 14px;
+		padding: 10px;
+	}
+
+	.container {
+		max-width: 95%;
+		margin: 0 auto;
+		padding: 2rem 1rem;
+	}
+
+	.top-center-link {
+		position: absolute;
+		left: auto;
+		/* Clear the previous centering */
+		right: 1.5rem;
+		/* Align close to the right edge */
+		transform: none;
+	}
+
+	h1 {
+		font-size: 38px;
+		/* color: #FFBE69; */
+		/* Larger heading size */
+		/* margin-bottom: 1rem; */
+		/* Optional: space below heading */
+	}
+
+	h2 {
+		font-size: 28px;
+		color: #FFBE69;
+	}
+}
