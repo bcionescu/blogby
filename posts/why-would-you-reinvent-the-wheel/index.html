@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Why Would You Reinvent The Wheel?- bcionescu.com</title>
+	<title>Why Would You Reinvent The Wheel? - bcionescu.com</title>
 	<link rel="stylesheet" href="/css/styles.css">
 </head>
 
@@ -15,62 +15,35 @@
 	<div class="container">
 		<br><br>
 		<center>
-			<!-- <h4 style="margin-bottom: 0;">May 15, 2025</h4> -->
 			<br><br>
 			<h1 style="margin-top: 0;">Why Would You Reinvent The Wheel?</h1>
 		</center>
-		<b><br>
-			<p>May 15, 2025</p>
-		</b>
-		<p>It is a fair question. Why <i>would</i> you do that? For example, this blog, which you are currently looking at,
-			was
-			designed from scratch using HTML, CSS, and a sprinkling of vanilla JS—that's it!
-			<br><br>
-			Why not use the myriad of other tools available to achieve this? The answer is simple: I was curious. If I had to
-			create this blog from scratch, how would <i>I</i> do it? What makes up a blog? Do I need all of the features that
-			generally come with one?
-			<br><br>
-			You see, the internet is bloated; it's become nearly impossible to navigate. This is due to the large amounts of
-			ever-present ads and heavy JS used seemingly everywhere.
-			<br><br>
-			I wanted something clean and simple, light as a feather—a delight to gaze upon. This is how I felt when I found
-			the blogs of <a href="https://world.hey.com/dhh" class="body-link" target="_blank"
-				rel="noopener noreferrer">DHH</a> and <a href="https://world.hey.com/jason" class="body-link" target="_blank"
-				rel="noopener noreferrer">Jason Fried</a>. The design of <a href="https://www.hey.com/world/" class="body-link"
-				target="_blank" rel="noopener noreferrer">hey.com/world</a> is excellent; clean and easy to
-			read.
-			<br><br>
-			I wanted to build something similar, but with meaningful constraints, as that is where exploratory learning
-			usually works best; bonus points if you have minimal knowledge of HTML, CSS, and JavaScript.
-			<br><br>
-			Despite my lack of knowledge, I had the basic template up and running within a few hours. I had a nice clean
-			background colour, some elements, a nice container for my text, a beautiful font, and some pretty CSS to tie it
-			all together. A bit of troubleshooting also ensured that my blog looks essentially the same on mobile, which is
-			fantastic. I was not expecting it to be that easy.
-			<br><br>
-			Now, what's next? Well, I love writing in <a href="https://obsidian.md" class="body-link" target="_blank"
-				rel="noopener noreferrer">Obsidian</a>. I have it set up
-			just the way I like
-			it; customised to the
-			gills. The result of a writing session is a small .md file; therefore, the next step is to write a program that
-			converts my Markdown file to HTML.
-			<br><br>
-			There's probably some library I could use, which does that for me, but again, what would be the fun in that? I
-			want to suffer, explore, come across dead ends; all for that sweet-sweet reward, where I
-			finally—figure it out.
-	</div>
+		<br>
+			<b><p>May 15, 2025</p></b>
 
-	<!-- Footer Placeholder -->
+			<p>It is a fair question. Why <i>would</i> you do that? For example, this blog, which you are currently looking at, was designed from scratch using HTML, CSS, and a sprinkling of vanilla JS—that's it!</p>
+
+			<p>Why not use the myriad of other tools available to achieve this? The answer is simple: I was curious. If I had to create this blog from scratch, how would <i>I</i> do it? What makes up a blog? Do I need all of the features that generally come with one?</p>
+
+			<p>Because the internet is bloated; it's become nearly impossible to navigate. This is due to the large amounts of ever-present ads and heavy JS used seemingly everywhere.</p>
+
+			<p>I wanted something clean and simple, light as a feather—a delight to gaze upon. I have already achieved this with my <a href="https://obsidian.md" class="body-link" target="_blank" rel="noopener noreferrer">Obsidian</a> setup, so my intention was to give the blog a similar look and feel. However, I wanted to do so with meaningful constraints, as that is where exploratory learning usually works best; bonus points if you have little to no knowledge of the technology before hand.</p>
+
+			<p>Despite my lack of knowledge, I had the basics up and running within a few hours: a nice clean background colour, some elements, a nice container for my text, a beautiful font, and some pretty CSS to tie it all together. A bit of troubleshooting also ensured that my blog looks essentially the same on mobile, which is fantastic. I was not expecting it to be so easy.</p>
+
+			<p>Now, what's next? Well, at the end of a writing session, I'm left with an .md file. As a result, the next step is to write a program that converts that file to HTML.</p>
+
+			<p>There's probably some library I could use, which does that for me, but again, what would be the fun in that? I want to suffer. I want to explore. I want to come across dead ends; all for that sweet-sweet reward at the end, where I finally—figure it out.</p>
+		</div>
+
 	<footer id="footer"></footer>
 
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
-			// Load Header
 			fetch('/templates/header.html')
 				.then(response => response.text())
 				.then(data => document.getElementById('header').innerHTML = data);
 
-			// Load Footer
 			fetch('/templates/footer.html')
 				.then(response => response.text())
 				.then(data => document.getElementById('footer').innerHTML = data);

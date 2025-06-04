@@ -23,22 +23,19 @@
 		</b>
 		<p>
 			<!-- Post begins here -->
-
+			$body
 			<!-- Post ends here -->
 		</p>
 	</div>
 
-	<!-- Footer Placeholder -->
 	<footer id="footer"></footer>
 
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
-			// Load Header
 			fetch('/templates/header.html')
 				.then(response => response.text())
 				.then(data => document.getElementById('header').innerHTML = data);
 
-			// Load Footer
 			fetch('/templates/footer.html')
 				.then(response => response.text())
 				.then(data => document.getElementById('footer').innerHTML = data);

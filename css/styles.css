@@ -1,27 +1,18 @@
-/* Regular font */
 @font-face {
-	/* font-family: 'JetBrainsMono'; */
-	/* src: url('../fonts/JetBrainsMono-Regular.woff2') format('woff2'); */
 	font-family: 'iAWriterMono';
 	src: url('../fonts/iAWriterMonoS-Regular.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 }
 
-/* Bold font */
 @font-face {
-	/* font-family: 'JetBrainsMono'; */
-	/* src: url('../fonts/JetBrainsMono-Bold.woff2') format('woff2'); */
 	font-family: 'iAWriterMono';
 	src: url('../fonts/iAWriterMonoS-Bold.woff2') format('woff2');
 	font-weight: bold;
 	font-style: normal;
 }
 
-/* Italic font */
 @font-face {
-	/* font-family: 'JetBrainsMono'; */
-	/* src: url('../fonts/JetBrainsMono-Italic.woff2') format('woff2'); */
 	font-family: 'iAWriterMono';
 	src: url('../fonts/iAWriterMonoS-Italic.woff2') format('woff2');
 	font-weight: normal;
@@ -34,12 +25,10 @@ body {
 	margin: 0;
 	display: flex;
 	flex-direction: column;
-	/* background-color: #181725; */
 	background-color: #1B1B1B;
 	color: white;
 	font-family: 'iAWriterMono', monospace;
 	font-size: 18px;
-	/* This affects normal text like <p> */
 }
 
 .dateread {
@@ -54,10 +43,6 @@ p {
 
 h1 {
 	font-size: 69px;
-	/* color: #FFBE69; */
-	/* Larger heading size */
-	/* margin-bottom: 1rem; */
-	/* Optional: space below heading */
 }
 
 h2 {
@@ -65,22 +50,11 @@ h2 {
 	color: #FFBE69;
 }
 
-h4 {
-	/* color: #FFBE69 */
-}
-
 .post-preview {
-	/* border: 2px solid #1f1f24; */
-	border: 2px solid grey;
-	/* color and thickness of the border */
+	border: 2px solid rgba(128, 128, 128, 0.5);
 	border-radius: 12px;
-	/* controls roundness of the corners */
 	padding: 35px;
-	/* space inside the border */
 	margin: 16px 0;
-	/* optional: space outside the border */
-	/* background-color: #fff; */
-	/* optional: background color */
 }
 
 .post-preview a {
@@ -107,7 +81,6 @@ a.body-link {
 	position: absolute;
 	top: 1rem;
 	left: 1.5rem;
-	/* color: #DEDAF2; */
 	color: white;
 	text-decoration: none;
 	font-size: 16px;
@@ -116,7 +89,6 @@ a.body-link {
 
 .top-center-link {
 	position: absolute;
-	/* or fixed, depending on context */
 	top: 1rem;
 	left: 50%;
 	transform: translateX(-50%);
@@ -149,7 +121,6 @@ a.read-more-link {
 
 footer {
 	text-align: center;
-	/* background-color: #333; */
 	color: white;
 	padding: 1rem;
 	margin-top: 2rem;
@@ -187,9 +158,7 @@ footer p {
 	.top-center-link {
 		position: absolute;
 		left: auto;
-		/* Clear the previous centering */
 		right: 1.5rem;
-		/* Align close to the right edge */
 		transform: none;
 	}
 
@@ -200,10 +169,6 @@ footer p {
 
 	h1 {
 		font-size: 45px;
-		/* color: #FFBE69; */
-		/* Larger heading size */
-		/* margin-bottom: 1rem; */
-		/* Optional: space below heading */
 	}
 
 }
@@ -226,18 +191,12 @@ footer p {
 	.top-center-link {
 		position: absolute;
 		left: auto;
-		/* Clear the previous centering */
 		right: 1.5rem;
-		/* Align close to the right edge */
 		transform: none;
 	}
 
 	h1 {
 		font-size: 38px;
-		/* color: #FFBE69; */
-		/* Larger heading size */
-		/* margin-bottom: 1rem; */
-		/* Optional: space below heading */
 	}
 
 	h2 {
