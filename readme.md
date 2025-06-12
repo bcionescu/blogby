@@ -14,3 +14,5 @@ Blogby is a static blog generator, with which I have created my personal blog. I
 - [ ] Enable blogby.rb to add the CSS, header, and footer, to each file, eliminating the need for JS
 - [ ] When a new post is added, the empty `posts` template will be used, in order to completely re-generate the list of posts on the main page, thus also enabling pagination
 - [ ] Include a JSON file with each post. This will contain information such as the post `id`, the original `published` data, etc. This way, if the post is re-generated, the original information can be retrieved
+- [ ] Implement code blocks, so you can showcase code
+- [ ] Implement syntax highlights in the code blocks
