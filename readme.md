@@ -4,9 +4,10 @@ Blogby is a static blog generator, with which I have created my personal blog. I
 
 ## To-Do
 
-- [ ] Implement `blogby server`.
+- [x] Implement `blogby server`.
 - [ ] Implement `blogby fetch [file_name]`, which would grab a list of .md files from predefined directories in a config file, if no file_name is given. The command takes an optional argument, which is the name of the file you wish to import.
 - [ ] Implement `blogby rebuild` which will have a look at the config file, and make corresponding changes to the css files.
+- [ ] Implement `blogby rebuild config` which will replace the current config file with the default one. Include a warning message, or make a backup of the current one, and call it `blogby.old` or similar
 
 - [ ] Implement `blogby pin [post_name]`, which will show you a list of the currently pinned posts.
 - [ ] Implement `blogby pin remove [post_name]` and `blogby pin add [post_name]`, which will enable you to modify the pinned posts. For now, the order will be chronological.
