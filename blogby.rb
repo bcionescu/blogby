@@ -1,3 +1,5 @@
+require 'pathname'
+
 COMMANDS = {
   'server' => -> { start_server },
   'fetch' => -> { fetch_files },
@@ -11,7 +13,33 @@ def start_server
   system('python3 -m http.server 27225')
 end
 
-# def fetch_files
+def fetch_path
+  config_file = File.open('.config/blogby')
+  config = config_file.readlines.map(&:chomp)
+  config_file.close
+
+  path = ''
+
+  config.each do |element|
+    if element.include?('path')
+      path = element[8..-2]
+      break
+    end
+  end
+  path
+end
+
+def fetch_files
+  path = fetch_path
+  files = Dir[path + '/*.md']
+  display_files(files)
+end
+
+def display_files(files)
+  files.each do |file|
+    puts Pathname.new(file).basename
+  end
+end
 
 # def rebuild_site
 
